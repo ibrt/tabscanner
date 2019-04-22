@@ -1,2 +1,1 @@
-# tabscanner
-TabScanner client for Go (https://tabscanner.com)
+# tabscanner [![Build Status](https://travis-ci.org/ibrt/tabscanner.svg?branch=master)](https://travis-ci.org/ibrt/tabscanner) [![Go Report Card](https://goreportcard.com/badge/github.com/ibrt/tabscanner)](https://goreportcard.com/report/github.com/ibrt/tabscanner) [![Test Coverage](https://codecov.io/gh/ibrt/tabscanner/branch/master/graph/badge.svg)](https://codecov.io/gh/ibrt/tabscanner) [![Go Docs](https://godoc.org/github.com/ibrt/tabscanner?status.svg)](http://godoc.org/github.com/ibrt/tabscanner)

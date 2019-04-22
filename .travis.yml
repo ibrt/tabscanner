@@ -1,15 +1,20 @@
 language: go
 
+env:
+  global:
+    secure: g3y+FM0Z+WCagcr1ort/kcaiS32K06HkYHmN/CMGJHHfsZZcPTqaBirWW+hlVEWDBHaEibSku/kRyDbmDOa+OgVDLMg6yl/GgWTXIi28owjdDCi1X/fCT09jVHlTyRkanHCOszcQUDQZXsOCOpcW7bceM/wm+/Yp2sn76XqSKIkhRf6mgg3KEwA1Hc8wKO+BkKfcXXTdAGLQLws8XHaIMlKMDcFH6YgkkZ7/snFLAoWQ2E9wisQWiEDH0ny793JLn7FW4ar+Dk2bVyKfrcYleNxndIPJuW+wZZUb6ojTtJ6EUqS7aT9M8f0kCJ8oYYjcw8PXvx7/MOuVAa765TQcrX7ffI1PbmmQunIW+sOACMgFuCUQ7c10JgcosR8cvtLxrrNp2iueUYiRGcAMmxdz7a5al3CSze4dtDqLMGPRkNafRvLd1hNnzUDIp9KMnG409qd/w1WSxmVI6QYeNsZuVsqp9u/0shZdJryjqw1DB1targLdafgvrJfizd9xoctOLEYS1hPgh212FbrLtJwvaIEYBhkWWAe/2mWv2ZczrL0y7WXyIM7j71DWM8ygVjHa5Tm1NXekHRE4U0vi9Zp9qjiqCNHKWqeQ67iQFzUwtzGHdChJJ/k1hXPyAvk5f//8expz53uMPx194bErSygiYhmGLHuJQlkFAuR1PZquy2Y=
+
 matrix:
   include:
-    - go: "1.11.x"
+    - go: 1.11.x
       env:
         - GO111MODULE=on
       install: true
-    - go: "1.12.x"
+    - go: 1.12.x
       env:
         - GO111MODULE=on
       install: true
+
 script:
   - go test -v -race -coverprofile=coverage.txt -covermode=atomic
 

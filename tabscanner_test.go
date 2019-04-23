@@ -24,6 +24,7 @@ func TestTabScanner_001(t *testing.T) {
 		Language:      tabscanner.LanguageEnglish,
 		LineExtract:   tabscanner.BoolPtr(true),
 		DocumentType:  tabscanner.DocumentTypeReceipt,
+		TestMode:      tabscanner.BoolPtr(true),
 	})
 	require.NoError(t, err)
 
@@ -43,6 +44,7 @@ func TestTabScanner_002(t *testing.T) {
 		Language:      tabscanner.LanguageEnglish,
 		LineExtract:   tabscanner.BoolPtr(true),
 		DocumentType:  tabscanner.DocumentTypeReceipt,
+		TestMode:      tabscanner.BoolPtr(true),
 	})
 	require.NoError(t, err)
 
@@ -64,6 +66,7 @@ func TestTabScanner_003(t *testing.T) {
 		Language:      tabscanner.LanguageEnglish,
 		LineExtract:   tabscanner.BoolPtr(true),
 		DocumentType:  tabscanner.DocumentTypeReceipt,
+		TestMode:      tabscanner.BoolPtr(true),
 	})
 	require.NoError(t, err)
 
@@ -85,6 +88,7 @@ func TestTabScanner_004(t *testing.T) {
 		Language:      tabscanner.LanguageEnglish,
 		LineExtract:   tabscanner.BoolPtr(true),
 		DocumentType:  tabscanner.DocumentTypeReceipt,
+		TestMode:      tabscanner.BoolPtr(true),
 	})
 	require.NoError(t, err)
 
@@ -104,6 +108,7 @@ func TestTabScanner_005(t *testing.T) {
 		Language:      tabscanner.LanguageEnglish,
 		LineExtract:   tabscanner.BoolPtr(true),
 		DocumentType:  tabscanner.DocumentTypeReceipt,
+		TestMode:      tabscanner.BoolPtr(true),
 	})
 	require.Error(t, err)
 }
